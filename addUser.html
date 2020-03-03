@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/slate/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="button.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Lawrence Inference - Get Started</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="roleSelectDiv">
+        <h1> I am a: </h1>
+        <table id="table">
+          <tr>
+            <td><button id="student" class="btn fourth">Student</button></td>
+            <td><button id="professor" class="btn fourth">Professor</button></td>
+          </tr>
+        </table>
+        <a href="addSurveys.html"><button id="admin" href="addSurveys.html" class="btn fifth push-to-bottom">Admin</button></a>
+      </div>
+      <div id="addStudent">
+        <div class="card p-3">
+          <div class="card-title">
+            <h3>Student</h3>
+          </div>
+          <label>Name</label>
+          <input id="studentName" class="form-control" type="text" placeholder="First Last">
+          <button id="studentBtn" type="button" class="btn fifth">Sign Up</button>
+        </div>
+      </div>
+      <div id="addProf">
+        <div class="card p-3">
+          <div class="card-title">
+            <h3>Professor</h3>
+          </div>
+          <label>Full Name</label>
+          <input id="profName" class="form-control" type="text" placeholder="First Last">
+          <label>Department</label>
+          <input id="profDepartment" class="form-control" type="text" placeholder="Computer Science">
+          <label>Office</label>
+          <input id="profOffice" class="form-control" type="text" placeholder="Briggs Hall 400">
+          <button id="profBtn" type="button" class="btn fifth">Sign Up</button>
+        </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="addUser.js"></script>
+    </div>
+  </body>
+</html>

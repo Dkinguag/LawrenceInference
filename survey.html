@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/slate/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="button.css" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Lawrence Inference - Survey</title>
+</head>
+<body>
+  <div class="container">
+      <div id="header" class="jumbotron jumbotron-fluid">
+          <h1 class="display-4">The Lawrence Inference</h1>
+          <p class="lead">Which Lawrence professor does your personality match?</p>
+          <p>Fill out the survey below to find out!</p>
+      </div>
+    <div class="card p-3" id="surveyDiv">
+      <div class="card-title">
+        <h3 id="question">
+          <!-- Empty h3 to be filled -->
+        </h3>
+      </div>
+      <section id="header-container">
+        <select class="browser-default custom-select custom-select-lg mb-3 card-text" id="select">
+          <!-- Empty select to be filled -->
+        </select>
+      </section>
+      <!-- <button id="next" type="button" class="btn btn-outline-info card-text pt-1 btn-block">Next</button> -->
+      <button id="next" class="btn fourth">Next</button>
+      <button id="submit" type="button" class="btn fifth">Submit</button>
+      <div id="progress" style="--progress: 0%"></div>
+    </div>
+    <div class="card p-3" id="results">
+      <div class="card-title">
+        <h1 id="percentage">
+          <!-- Empty h1 to be filled -->
+        </h1>
+        <h1 id="percentage">Match</h1>
+      </div>
+      <h3 id="profName"></h3>
+      <h4 style="text-align: center">Department</h4>
+      <h3 id="profDepartment"></h3>
+      <h4 style="text-align: center">Office</h4>
+      <h3 id="profOffice"></h3>
+      <button id="back" class="btn fourth.back">Back</button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="survey.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Load the main bootstrap style sheet -->
+    <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+    <title>Add Question to Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="container">
+        <div id="one">
+          <h3 class="text-info">Step One</h3>
+          <p>Fill in the form below with the details of your survey and click create.</p>
+          <div class="card">
+          <div class="card-body">
+          <fieldset>
+            <legend> Add Question </legend>
+            <div class="form-group row">
+            <label for="title" class="col-form-label col-sm-2">Title of Survey:</label>
+            <input type="text" class="form-control col-sm-10" id="title" />
+            </div>
+            <div class="col-sm-offset-2 col-sm-10"><button id="create" class="btn btn-primary">Add Question</button></div>
+          </fieldset>
+          </div>
+          </div>
+        </div>
+        <div id="two">
+          <h3 class="text-info">Step Two</h3>
+          <p>Next, use the form below to construct survey questions. In the response field you can
+               enter a comma separated list of potential responses, or leave the response field blank
+             to allow free responses to a question.</p>
+          <p>When you are done constructing questions, click the Done button to upload your survey to
+             to the server.</p>
+          <div class="card">
+          <div class="card-body"
+          <fieldset>
+            <legend>Set Up A Question</legend>
+            <div class="form-group row">
+            <label for="question" class="col-form-label col-sm-2">Question:</label>
+            <input type="text" class="form-control col-sm-10" id="question" />
+            </div>
+            <div class="form-group row">
+            <label for="responses" class="col-form-label col-sm-2">Responses:</label>
+            <input type="text" class="form-control col-sm-10" id="responses"  placeholder="Comma separated list"/>
+            </div>
+            <div class="col-sm-offset-2 col-sm-10">
+            <button id="add" class="btn btn-primary">Add Question</button>
+            <button id="done" class="btn btn-primary">Done</button>
+            </div>
+          </fieldset>
+          </div>
+          </div>
+          <div id="questions">
+          </div>
+        </div>
+        <div id="three">
+          <h3 class="text-info">Step Three</h3>
+          <p>Your survey has been uploaded.</p>
+        </div>
+      </div>
+        <!-- Since our script will depend on JQuery, we load JQuery first. -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="addSurveys.js"></script>
+
+  </body>
+</html>
